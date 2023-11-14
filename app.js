@@ -66,11 +66,7 @@ function createRepo(repos){
         repoEl.href=repo.html_url
         repoEl.target='_blank'
         repoEl.innerText=repo.name
-
-        const imgEl=document.createElement('img')
-        imgEl.src=repo.
-
-        
+       
         reposEl.appendChild(repoEl)
     })
 
