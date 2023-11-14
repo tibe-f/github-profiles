@@ -21,10 +21,10 @@ body{
 }
 .user-form{
     width: 100%;
-    max-width: 60rem;
+    max-width: 80rem;
 }
 .user-form input{
-    width: 100%;
+    width: 85%;
     display: block;
     background-color: var(--third);
     border: 0;
@@ -40,9 +40,11 @@ body{
     outline: 0;
     border: 0;
 }
+main{
+    width: 90%;
+}
 .card{
     width: 100%;
-    max-width: 80rem;
     background-color: var(--third);
     border-radius: 2rem;
     display: flex;
@@ -87,4 +89,21 @@ body{
     border-radius: 2rem; 
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    display: inline-flex;
+}
+@media(max-width: 500px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-info{
+        margin: 0 auto;
+    }
+    .user-form{
+        max-width: 40rem;
+    }
+    .avatar{
+        width: 10rem;
+        height: 10rem;
+    }
 }
